@@ -16,9 +16,9 @@ const CounterApp = () => {
 
     return (
       <div className="m-8">
+        <h1 className="text-4xl text-blue-900">Counter App</h1>
         <div className="text-center">
-          <h1
-            className={`text-2xl ${isNegative }`}>
+          <h1 className={`text-2xl ${isNegative}`}>
             {counter} - {displayCounterLabel}
           </h1>
         </div>
@@ -30,7 +30,9 @@ const CounterApp = () => {
           <button className={btn} onClick={handleDecrement}>
             Decrement
           </button>
-          <button className={btn} onClick={handleReset}>Reset</button>
+          <button className={btn} onClick={handleReset}>
+            Reset
+          </button>
         </div>
       </div>
     );
