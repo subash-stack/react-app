@@ -16,7 +16,7 @@ const CounterApp = () => {
 
     return (
       <div className="m-8">
-        <h1 className="text-4xl text-blue-900">Counter App</h1>
+        <h1 className="text-4xl text-blue-900 text-center my-8">Counter App</h1>
         <div className="text-center">
           <h1 className={`text-2xl ${isNegative}`}>
             {counter} - {displayCounterLabel}
