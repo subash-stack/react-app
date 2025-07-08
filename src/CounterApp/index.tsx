@@ -5,12 +5,12 @@ import { useState } from "react";
 
 
 const CounterApp = () => {
-    const [counter, setCounter] = useState(0);
+    const [counter, setCounter] = useState<number>(0);
     const isNegative = counter < 0 ? "text-red-700" : "text-green-700";
     const displayCounterLabel = counter % 2 === 0 ? "Even" : "Odd";
     const btn = "px-8 py-4  rounded-md border cursor-pointer";
-    const handleIncrement = () => setCounter((prev) => prev+1);
-    const handleDecrement = () => setCounter((prev) => prev - 1);
+    const handleIncrement = () => setCounter((prev: number) => prev + 1);
+    const handleDecrement = () => setCounter((prev: number) => prev - 1);
     const handleReset = () => setCounter(0);
 
 
